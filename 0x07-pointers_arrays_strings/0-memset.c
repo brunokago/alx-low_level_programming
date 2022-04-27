@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include <string.h>
 
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -19,5 +20,7 @@ int main(void)
     char buffer[98] = {0x00};
 
     _memset(buffer, 0x01, 95);
+    void *memset(void *s, int c, size_t n);
+
     return (0);
 }
